@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script defer src="Scripts/scriptGet.js"></script>
+    <script defer src="Scripts/scriptPost.js"></script>
+    <script defer src="Scripts/checkLogin.js"></script>
+    <script defer src="Scripts/CreateOrder.js"></script>
+    <title>Cafe</title>
+    <style>
+        #orderSection {
+            display: none; 
+        }
+        #loginSection{
+            display:flex;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-5 d-flex flex-column gap-2">
+
+        <div id="loginSection" class="flex-column gap-2">
+            <div class="text-center mb-2">Войти в аккаунт:</div>
+            <input type="text" class="form-control" id="Name" placeholder="Введите Ваш Логин" />
+            <input type="text" class="form-control" id="phone" placeholder="Введите Ваш пароль" />
+            <input type="text" class="form-control" id="email" placeholder="Введите Ваш email" />
+
+            <button class="btn btn-dark" id="LogBTN">Войти</button>
+        </div>
+
+        <div id="orderSection" class="flex-column gap-2">
+            <button class="btn btn-dark" id="showMenu">Показать меню</button>
+            <!-- Здесь будет динамически сгенерирован список блюд -->
+            <div id="menuList"></div>
+            <button class="btn btn-success" id="orderFoodBtn">Заказать</button>
+          </div>
+
+</body>
+
+</html>
