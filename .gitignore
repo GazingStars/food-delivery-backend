@@ -42,6 +42,8 @@ Thumbs.db
 
 # Jest coverage
 coverage/
+uploads/
+s.js
 
 # Dependencies Lock
 package-lock.json
